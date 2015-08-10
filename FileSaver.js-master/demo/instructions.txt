@@ -1,0 +1,15 @@
+
+
+Please follow the instructions bellow
+
+1) Search for animal in the Wikipedia search bar like monkey
+
+2) Hold the command button and cick on a few links to open links in new tabs
+
+3) Click on the chrome extension omnibar icon 
+
+4) Go to terminal 
+
+5) Enter command: python dump.py
+
+6) You're done, thank you 
