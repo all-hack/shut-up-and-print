@@ -6,10 +6,30 @@
 </head>
 <body>
 
+	<div id="kk">
+		This is gonna print maybe?
+	</div>
+
 	<script>
-		var blob = new Blob(["Hello, world!"], {type: "text/plain; charset=utf-8"});	
-		saveAs(blob, "temp.txt");
+
+		function printDiv(divName) {
+		     var printContents = document.getElementById(divName).innerHTML;
+		     var originalContents = document.body.innerHTML;
+
+		     //document.body.innerHTML = printContents;
+
+
+		     window.print();
+
+		     document.body.innerHTML = originalContents;
+		}
+
+		function save (){
+			var blob = new Blob([document.body.innerHTML], {type: "text/plain; charset=utf-8"});	
+			saveAs(blob, "temp5.txt");
+		}
 	</script>
-	<button>dkagfuad</button>
+	<button onclick="save();">dkagfuad</button>
+	<button onclick="printDiv('kk');">print</button>
 </body>
 </html>
